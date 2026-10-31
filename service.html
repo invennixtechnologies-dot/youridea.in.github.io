@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#03050b">
-<title>Service | Invennix</title><link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#fffdf6">
+<title>Service | YourIdea</title><link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css">
 </head><body data-p="services"><main>
 <div class="wrap pg"><a href="services.html" style="color:var(--cyan);font-size:14px">← All services</a><h2 id="t" style="margin-top:14px"></h2><p class="lead" id="d"></p>
 <div class="stats"><div><strong id="tm" style="font-size:22px"></strong><span>Typical time</span></div><div><strong id="pr2" style="font-size:22px"></strong><span>Starting price</span></div></div></div>
@@ -13,7 +13,7 @@
 <div class="row" style="justify-content:space-between;margin-top:30px"><a class="btn g" id="pv">← Previous</a><a class="btn g" id="nx">Next service →</a></div></div></section>
 </main><script src="assets/app.js"></script><script>
 const id=Math.max(0,Math.min(7,+(new URLSearchParams(location.search).get('s'))||0)),s=S[id],x=X[id],ch=a=>a.map(v=>'<span class="chip on">'+v+'</span>').join('');
-document.title=s[0]+' | Invennix';$('t').textContent=s[0];$('d').textContent=x[0];$('tm').textContent=x[4];$('pr2').textContent='₹'+x[5];$('sn').textContent=s[0];
+document.title=s[0]+' | YourIdea';$('t').textContent=s[0];$('d').textContent=x[0];$('tm').textContent=x[4];$('pr2').textContent='₹'+x[5];$('sn').textContent=s[0];
 $('inc').innerHTML=ch(x[2]);$('tl2').innerHTML=ch(x[3]);$('wf').innerHTML=x[1].map(v=>'<li>'+v+'</li>').join('');
 $('pv').href='service.html?s='+(id+7)%8;$('nx').href='service.html?s='+(id+1)%8;
 const tx=$('tx'),note=$('note'),mic=$('mic'),SR=window.SpeechRecognition||window.webkitSpeechRecognition;let rec,on=0;
